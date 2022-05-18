@@ -1,0 +1,21 @@
+<form #myForm="ngForm" (ngSubmit)="submit(myForm.value)">
+    <div class="form-group">
+        <label for="Name">Name</label>
+        <input type="text" name="Name" [(ngModel)]="Name">
+    </div>
+    <br>
+  
+    <div class="form-group">
+        <label for="Email">Email</label>
+        <input type="email" name="Email" [(ngModel)]="Email">
+    </div>
+    <br>
+  
+    <div class="form-group">
+        <label for="Password">Password</label>
+        <input type="password" name="Password" [(ngModel)]="Password">
+    </div>
+    <br>
+  
+    <button type="submit">Submit</button>
+  </form>
